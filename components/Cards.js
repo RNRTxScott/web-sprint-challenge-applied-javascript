@@ -29,6 +29,9 @@ const elementsData = Object.values(response.data.articles);
         cards1.appendChild(cardMaker(article));
       })
     })
+    cards1.addEventListener('click', () => {
+        console.log(elementsData.headLine);
+    })
 })
 
 
@@ -46,14 +49,20 @@ function cardMaker(obj){
     const imageUp = document.createElement('img');
     const nameAuthor = document.createElement('span');
     
-  
-    card4.classList.add("card-container");
-   card4.classList.add('card');
-   headLine.classList.add('headline');
-   writerAuth.classList.add('author');
-   imageUpCon.classList.add('img-container');
-   imageUp.classList.add('img');
+
+
+card4.classList.add('.card');
+writerAuth.classList.add('.author');
+nameAuthor.classList.add('span');
+/*
+    card4.classList.add('card');
+    card4.classList.add(".cards-container");
+   headLine.classList.add('.headline');
+   imageUpCon.classList.add('.img-container');
+   imageUp.classList.add('.img-container');
    nameAuthor.classList.add('span');
+   */
+
   
    headLine.textContent = obj.headline;
     imageUp.src = obj.authorPhoto;
@@ -61,11 +70,11 @@ nameAuthor.textContent = obj.authorName;
   
     card4.append(headLine);
     card4.append(writerAuth);
-    card4.append();
     card4.append(nameAuthor);
     card4.append(imageUpCon);
     imageUpCon.append(imageUp);
-    
   
     return card4;
   }
+
+  

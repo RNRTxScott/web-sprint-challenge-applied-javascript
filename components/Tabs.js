@@ -34,8 +34,8 @@ function tabMaker(obj){
   tabby.textContent = `${obj.topics}`
 
 
-  //tabby.classList.add("tabs");
- // tabby.classList.add("topics");
+  tabby.classList.add("tabs");
+  tabby.classList.add("topics");
   tabby.classList.add("tab");
   //tabby.classList.add("active-tab");
   
