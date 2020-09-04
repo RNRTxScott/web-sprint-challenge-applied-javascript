@@ -36,6 +36,6 @@ bigTemp.textContent = '98°';
 return bigHead;
 
 }
-const entryPoint1 = document.querySelector('body');
+const entryPoint1 = document.querySelector('.header-container');
 // console.log(entryPoint1);
 entryPoint1.append(Header());
