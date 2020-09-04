@@ -13,8 +13,8 @@
 axios.get('https://lambda-times-api.herokuapp.com/topics')
 .then(response => {
 
-const cards = document.querySelector('.title')
-cards.append(tabMaker(response.data))
+const cards2 = document.querySelector('.title')
+cards2.append(tabMaker(response.data))
 console.log('response',response);
 
 })
@@ -37,7 +37,7 @@ function tabMaker(obj){
   //tabby.classList.add("tabs");
  // tabby.classList.add("topics");
   tabby.classList.add("tab");
- // tabby.classList.add("active-tab");
+  //tabby.classList.add("active-tab");
   
   return tabby;
 }
